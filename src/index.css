@@ -21,10 +21,10 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: var(--bg-color);
+  background: linear-gradient(135deg, rgb(107, 132, 115) 0%, rgb(58, 84, 67) 100%);
+  background-attachment: fixed;
   color: var(--text-main);
   line-height: 1.5;
-  background-image: radial-gradient(circle at top right, rgb(107, 132, 115), rgb(74, 99, 82));
   min-height: 100vh;
 }
 
@@ -34,7 +34,6 @@ body {
   padding: 3rem 1.5rem;
 }
 
-/* Header */
 .header {
   text-align: center;
   margin-bottom: 3rem;
@@ -53,7 +52,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Cards */
 .card {
   background-color: var(--card-bg);
   border-radius: var(--border-radius);
@@ -82,7 +80,6 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Buttons */
 .btn-primary {
   background: linear-gradient(135deg, rgb(228, 184, 142), rgb(216, 168, 123));
   color: rgb(59, 40, 24);
@@ -101,7 +98,6 @@ body {
   box-shadow: 0 6px 15px rgba(216, 168, 123, 0.4);
 }
 
-/* Budget Form */
 .setup-card {
   text-align: center;
   max-width: 600px;
@@ -130,7 +126,6 @@ body {
   border-color: var(--primary-color);
 }
 
-/* Layout */
 .dashboard-content {
   display: grid;
   grid-template-columns: 1fr;
@@ -143,7 +138,6 @@ body {
   }
 }
 
-/* Summary Component */
 .summary-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -205,7 +199,6 @@ body {
   font-weight: 500;
 }
 
-/* Progress Bar */
 .progress-container {
   margin: 2rem 0;
 }
@@ -245,7 +238,6 @@ body {
   text-align: right;
 }
 
-/* Expense Form */
 .expense-form .form-group { margin-bottom: 1.25rem; }
 
 .expense-form label {
@@ -279,7 +271,6 @@ body {
   text-align: center;
 }
 
-/* Expense List */
 .empty-message {
   text-align: center;
   color: var(--text-muted);
