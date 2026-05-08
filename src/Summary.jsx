@@ -35,7 +35,8 @@ const Summary = ({ budget, totalSpent, remainingBalance, safeToSpend }) => {
               className="progress-bar-fill" 
               style={{ 
                 width: `${percentSpent}%`,
-                backgroundColor: percentSpent > 80 ? '#f2a699' : '#d8a87b'
+                // Updated hex codes to RGB format here:
+                backgroundColor: percentSpent > 80 ? 'rgb(242, 166, 153)' : 'rgb(216, 168, 123)'
               }}
             ></div>
           </div>

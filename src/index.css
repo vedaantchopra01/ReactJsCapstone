@@ -1,19 +1,15 @@
-/* Earthy & Aesthetic Finance Tracker
-  Inspired by nature: deep greens, warm tans, soft shadows
-*/
-
 :root {
-  --bg-color: #5b7463; /* Earthy sage green */
-  --card-bg: #f5f4f0; /* Warm off-white/beige */
-  --card-dark: #3a5443; /* Deep forest green for contrast */
-  --primary-color: #d8a87b; /* Warm tan/brown from the reference button */
-  --primary-hover: #c4966a;
-  --text-main: #2c3e32;
-  --text-light: #f5f4f0;
-  --text-muted: #738478;
-  --success-color: #4a7558; 
-  --danger-color: #a85c50; /* Muted earthy red */
-  --border-radius: 24px; /* Large rounded corners */
+  --bg-color: rgb(91, 116, 99); 
+  --card-bg: rgb(245, 244, 240); 
+  --card-dark: rgb(58, 84, 67); 
+  --primary-color: rgb(216, 168, 123); 
+  --primary-hover: rgb(196, 150, 106);
+  --text-main: rgb(44, 62, 50);
+  --text-light: rgb(245, 244, 240);
+  --text-muted: rgb(115, 132, 120);
+  --success-color: rgb(74, 117, 88); 
+  --danger-color: rgb(168, 92, 80); 
+  --border-radius: 24px; 
   --shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -28,7 +24,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-main);
   line-height: 1.5;
-  background-image: radial-gradient(circle at top right, #6b8473, #4a6352);
+  background-image: radial-gradient(circle at top right, rgb(107, 132, 115), rgb(74, 99, 82));
   min-height: 100vh;
 }
 
@@ -53,7 +49,7 @@ body {
 }
 
 .header p {
-  color: #cdd6d0;
+  color: rgb(205, 214, 208);
   font-size: 1.1rem;
 }
 
@@ -64,7 +60,7 @@ body {
   padding: 2rem;
   box-shadow: var(--shadow);
   margin-bottom: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid var(--primary-color);
 }
 
 .card h2 {
@@ -72,14 +68,13 @@ body {
   margin-bottom: 1.5rem;
   color: var(--text-main);
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid #e0dfd9;
+  border-bottom: 1px solid rgb(224, 223, 217);
 }
 
-/* Darker variation for the summary to match the reference's contrast */
 .summary-card {
   background-color: var(--card-dark);
   color: var(--text-light);
-  border: none;
+  border: 2px solid var(--primary-color); 
 }
 
 .summary-card h2 {
@@ -89,8 +84,8 @@ body {
 
 /* Buttons */
 .btn-primary {
-  background: linear-gradient(135deg, #e4b88e, #d8a87b);
-  color: #3b2818;
+  background: linear-gradient(135deg, rgb(228, 184, 142), rgb(216, 168, 123));
+  color: rgb(59, 40, 24);
   border: none;
   padding: 0.85rem 1.75rem;
   border-radius: 30px;
@@ -121,12 +116,12 @@ body {
 
 .budget-form input {
   padding: 0.85rem 1.5rem;
-  border: 2px solid transparent;
+  border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 30px;
   font-size: 1rem;
   width: 250px;
-  background-color: #fff;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: border-color 0.2s;
   outline: none;
 }
@@ -165,7 +160,7 @@ body {
 }
 
 .summary-item p {
-  color: #b5c4ba;
+  color: rgb(181, 196, 186);
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -177,8 +172,8 @@ body {
   font-weight: 600;
 }
 
-.summary-item.spent h3 { color: #f2a699; }
-.summary-item.remaining h3 { color: #a3d9b5; }
+.summary-item.spent h3 { color: rgb(242, 166, 153); }
+.summary-item.remaining h3 { color: rgb(163, 217, 181); }
 
 .suggestions-box {
   background-color: rgba(0, 0, 0, 0.15);
@@ -196,7 +191,7 @@ body {
 .suggestions-box ul {
   margin-top: 0.75rem;
   padding-left: 1.5rem;
-  color: #d1ddd5;
+  color: rgb(209, 221, 213);
 }
 
 .suggestions-box li { margin-bottom: 0.4rem; }
@@ -220,13 +215,13 @@ body {
   justify-content: space-between;
   margin-bottom: 0.75rem;
   font-size: 0.9rem;
-  color: #b5c4ba;
+  color: rgb(181, 196, 186);
 }
 
 .progress-bar-bg {
   width: 100%;
   height: 8px;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -239,13 +234,13 @@ body {
 
 .safe-spend-text {
   font-size: 0.9rem;
-  color: #a3d9b5;
+  color: rgb(163, 217, 181);
   text-align: right;
 }
 
 .warning-text {
   font-size: 0.9rem;
-  color: #f2a699;
+  color: rgb(242, 166, 153);
   font-weight: 500;
   text-align: right;
 }
@@ -263,10 +258,10 @@ body {
 .expense-form input {
   width: 100%;
   padding: 0.85rem;
-  border: 1px solid #e0dfd9;
+  border: 1px solid rgb(224, 223, 217);
   border-radius: 12px;
   font-size: 1rem;
-  background-color: #faf9f7;
+  background-color: rgb(250, 249, 247);
   outline: none;
   transition: border-color 0.2s;
 }
@@ -276,7 +271,7 @@ body {
 
 .error-text {
   color: var(--danger-color);
-  background-color: #fceceb;
+  background-color: rgb(252, 236, 235);
   padding: 0.75rem;
   border-radius: 8px;
   margin-bottom: 1.25rem;
@@ -298,10 +293,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border-radius: 12px;
   margin-bottom: 0.75rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
 }
 
 .expense-title {
@@ -322,7 +317,7 @@ body {
 }
 
 .btn-delete {
-  background: #fceceb;
+  background: rgb(252, 236, 235);
   border: none;
   color: var(--danger-color);
   border-radius: 50%;
@@ -335,5 +330,5 @@ body {
 
 .btn-delete:hover {
   background-color: var(--danger-color);
-  color: white;
+  color: rgb(255, 255, 255);
 }
